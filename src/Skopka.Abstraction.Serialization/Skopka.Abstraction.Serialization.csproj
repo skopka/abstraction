@@ -4,6 +4,9 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <PackageId>Skopka.Abstraction.Serialization</PackageId>
+        <Description>Serialization primitives (currently: Optional&lt;T&gt; Missing/Null/Value + JSON converter).</Description>
+        <IsPackable>true</IsPackable>
     </PropertyGroup>
 
 </Project>
