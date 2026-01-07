@@ -36,7 +36,15 @@ jobs:
         run: dotnet test -c Release --no-build
 
       - name: Pack
-        run: dotnet pack -c Release --no-build -p:Version=${{ steps.ver.outputs.version }} -o ./artifacts
+        run: |
+          VERSION="${{ steps.ver.outputs.version }}"
+
+          dotnet pack src/Skopka.Abstraction.OperationResult/Skopka.Abstraction.OperationResult.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts
+          dotnet pack src/Skopka.Abstraction.Serialization/Skopka.Abstraction.Serialization.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts
+          dotnet pack src/Skopka.Abstraction/Skopka.Abstraction.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts
+          
+      - name: List artifacts
+        run: ls -la ./artifacts
 
       - name: Push to NuGet.org
         run: dotnet nuget push "./artifacts/*.nupkg" --api-key "${{ secrets.NUGET_API_KEY }}" --source "https://api.nuget.org/v3/index.json" --skip-duplicate
