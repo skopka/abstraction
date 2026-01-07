@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Skopka.Abstraction.OperationResult\Skopka.Abstraction.OperationResult.csproj" />
-      <ProjectReference Include="..\Skopka.Abstraction.Serialization\Skopka.Abstraction.Serialization.csproj" />
+        <PackageReference Include="Skopka.Abstraction.OperationResult" Version="$(Version)" />
+        <PackageReference Include="Skopka.Abstraction.Serialization" Version="$(Version)" />
     </ItemGroup>
 
 </Project>
