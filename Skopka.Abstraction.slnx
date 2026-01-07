@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/Skopka.Abstraction.OperationResult/Skopka.Abstraction.OperationResult.csproj" />
+  <Project Path="src/Skopka.Abstraction/Skopka.Abstraction.csproj" />
+  <Project Path="test/Skopka.Abstraction.OperationResult.Test/Skopka.Abstraction.OperationResult.Test.csproj" />
+</Solution>
