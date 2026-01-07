@@ -7,12 +7,15 @@
         <PackageId>Skopka.Abstraction</PackageId>
         <Description>Meta-package that references all Skopka.Abstraction packages.</Description>
         <IsPackable>true</IsPackable>
-        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <IncludeBuildOutput>false</IncludeBuildOutput>        
+        <PackageType>Dependency</PackageType>        
+        <NoWarn>$(NoWarn);NU5128</NoWarn>        
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Skopka.Abstraction.OperationResult\Skopka.Abstraction.OperationResult.csproj" />
-      <ProjectReference Include="..\Skopka.Abstraction.Serialization\Skopka.Abstraction.Serialization.csproj" />
+        <ProjectReference Include="..\Skopka.Abstraction.OperationResult\Skopka.Abstraction.OperationResult.csproj" />
+        <ProjectReference Include="..\Skopka.Abstraction.Serialization\Skopka.Abstraction.Serialization.csproj" />
     </ItemGroup>
 
     <ItemGroup>
