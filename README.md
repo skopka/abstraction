@@ -1,4 +1,6 @@
-﻿# Skopka.Abstraction
+﻿// ROOT README.md (обновлённый блок Packages — добавлен Encoding)
+
+# Skopka.Abstraction
 
 A small collection of reusable .NET abstractions and primitives.
 
@@ -29,6 +31,17 @@ Serialization-related primitives and helpers.
 
 Documentation:
 - [`Serialization: Optional`](documentation/Optional.md)
+
+### Skopka.Abstraction.Data
+Data helpers.
+
+> Currently it provides Base64 / Base64Url extension methods for `byte[]`, `ReadOnlySpan<byte>` and `string`.
+
+- Base64 encoding/decoding
+- Base64Url encoding/decoding (URL-safe, without padding)
+
+Documentation:
+- [`Encoding: Base64 / Base64Url`](documentation/Base64.md)
 
 ### Skopka.Abstraction
 Meta-package that references and ships **all** packages from this repository in a single dependency.

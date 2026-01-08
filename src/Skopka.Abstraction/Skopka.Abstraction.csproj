@@ -14,6 +14,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\Skopka.Abstraction.Data\Skopka.Abstraction.Data.csproj" />
         <ProjectReference Include="..\Skopka.Abstraction.OperationResult\Skopka.Abstraction.OperationResult.csproj" />
         <ProjectReference Include="..\Skopka.Abstraction.Serialization\Skopka.Abstraction.Serialization.csproj" />
     </ItemGroup>

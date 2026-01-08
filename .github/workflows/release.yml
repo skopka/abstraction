@@ -41,6 +41,7 @@ jobs:
 
           dotnet pack src/Skopka.Abstraction.OperationResult/Skopka.Abstraction.OperationResult.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts
           dotnet pack src/Skopka.Abstraction.Serialization/Skopka.Abstraction.Serialization.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts
+          dotnet pack src/Skopka.Abstraction.Data/Skopka.Abstraction.Data.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts
           dotnet pack src/Skopka.Abstraction/Skopka.Abstraction.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts
           
       - name: List artifacts
