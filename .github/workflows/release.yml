@@ -39,10 +39,10 @@ jobs:
         run: |
           VERSION="${{ steps.ver.outputs.version }}"
 
-          dotnet pack src/Skopka.Abstraction.OperationResult/Skopka.Abstraction.OperationResult.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts
-          dotnet pack src/Skopka.Abstraction.Serialization/Skopka.Abstraction.Serialization.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts
-          dotnet pack src/Skopka.Abstraction.Data/Skopka.Abstraction.Data.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts
-          dotnet pack src/Skopka.Abstraction/Skopka.Abstraction.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts
+          dotnet pack src/Skopka.Abstraction.OperationResult/Skopka.Abstraction.OperationResult.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg
+          dotnet pack src/Skopka.Abstraction.Serialization/Skopka.Abstraction.Serialization.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg
+          dotnet pack src/Skopka.Abstraction.Data/Skopka.Abstraction.Data.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts -p:IncludeSymbols=true -p:SymbolPackageFormat=snupkg
+          dotnet pack src/Skopka.Abstraction/Skopka.Abstraction.csproj -c Release --no-build -p:Version=$VERSION -o ./artifacts -p:IncludeSymbols=false
           
       - name: List artifacts
         run: ls -la ./artifacts

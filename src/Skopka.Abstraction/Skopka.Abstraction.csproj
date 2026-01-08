@@ -11,6 +11,8 @@
         <PackageType>Dependency</PackageType>        
         <NoWarn>$(NoWarn);NU5128</NoWarn>        
         <PackageReadmeFile>README.md</PackageReadmeFile>
+        <IncludeSymbols>false</IncludeSymbols>
+        <SymbolPackageFormat></SymbolPackageFormat>
     </PropertyGroup>
 
     <ItemGroup>
