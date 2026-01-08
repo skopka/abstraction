@@ -18,3 +18,12 @@ Initial release.
 
 - **Skopka.Abstraction** (meta-package)
     - Single package that references all packages from this repository.
+
+## 0.2.0
+
+### Added
+
+- **Skopka.Abstraction.Data**
+  - Base64 / Base64Url helpers (`ToBase64`, `FromBase64`, `ToBase64Url`, `FromBase64Url`)
+  - Support for `byte[]` and `ReadOnlySpan<byte>` encoding
+  - URL-safe Base64 encoding without padding (`=`) and with `-`/`_` substitutions

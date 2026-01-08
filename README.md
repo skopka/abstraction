@@ -1,10 +1,10 @@
-﻿// ROOT README.md (обновлённый блок Packages — добавлен Encoding)
-
-# Skopka.Abstraction
+﻿# Skopka.Abstraction
 
 A small collection of reusable .NET abstractions and primitives.
 
 > Current focus: **OperationResult** (success/failure + typed value + composable extensions).
+
+[`Changelog`](CHANGELOG.md)
 
 ---
 
