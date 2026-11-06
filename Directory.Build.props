@@ -9,6 +9,7 @@
         <!-- NuGet common -->
         <Authors>SKOPka</Authors>
         <Company>SKOPka</Company>
+        <PackageProjectUrl>https://products.skopka.ru/abstraction/</PackageProjectUrl>
         <RepositoryUrl>https://github.com/skopka/abstraction</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
