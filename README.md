@@ -1,4 +1,4 @@
-﻿# Skopka.Abstraction
+# Skopka.Abstraction
 
 A small collection of reusable .NET abstractions and primitives.
 
@@ -16,6 +16,8 @@ Guides and API reference cover version **0.2.0**:
 - [English guide](https://products.skopka.ru/guides/en/abstraction.html)
 - [Russian guide](https://products.skopka.ru/guides/ru/abstraction.html)
 - [API reference](https://products.skopka.ru/api/abstraction/index.html)
+
+[Release documentation checklist](docs/releasing.md)
 
 ## Packages
 

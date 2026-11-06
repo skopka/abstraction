@@ -1,0 +1,3 @@
+# Release documentation checklist
+
+The existing [release workflow](../.github/workflows/release.yml) defines package publication. For documentation synchronization, follow [AGENTS.md](../AGENTS.md#products-documentation-synchronization) and the canonical [Products workflow](https://git.skopka.ru/skopka/products/src/branch/main/docs/documentation-workflow.md): prepare consumer-facing documentation before release; verify the GitHub tag and every NuGet package before updating the Products pin; build, deploy and verify the site; and report any remaining publication or deployment stage.
